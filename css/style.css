@@ -1,0 +1,11 @@
+.body {
+    width: 1900px;
+    height: 4500px;
+  }
+  
+
+.header-top{
+    widows: 1900px;
+    height: 53px;
+    background-color: var(--black)
+}
