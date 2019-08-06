@@ -1,11 +1,601 @@
-.body {
-    width: 1900px;
-    height: 4500px;
-  }
-  
+/*creating the header*/
 
-.header-top{
-    widows: 1900px;
-    height: 53px;
-    background-color: var(--black)
+.header {
+  height: 51px;
+  padding-top: 18px;
+  padding-bottom: 22px;
+  text-align: center;
+  color: white;
+  background: black;
+  font-size: 12px;
+  font-family:'Source Sans Pro';
+ }
+  
+ .mainHeader{
+   background-color: #000;
+  align-items: center;
+    
+ }
+ .headerContent{
+  width: 70%;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+ }
+
+ .headerContent .headerText{
+   width: 50%;
+   color: aliceblue;
+ }
+ .headerText h4{
+   font-family: SourceSansPro;
+   font-size: 12px;
+   font-weight: normal;
+   font-style: normal;
+   font-stretch: normal;
+   text-transform: uppercase;
+   line-height: 1.83;
+   letter-spacing: 2.4px;
+   color: #999;
+ }
+
+ /*icons for the header*/
+ .favcon {
+   float: right;
+   margin: auto;
+   background-color: black;
+   padding-right: 150px;
+ }
+ .btn {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:rgb(174, 190, 22);
+  color: white;
+  font-size: 15px;
+  padding: 25px px;
+  border: 5px;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+ }
+ .btn:hover {
+  background-color: black;
+ }
+ .icon {
+ position: absolute;
+ top: 90%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+ text-align: center;
+ color:white;
+ font-size: 50px;
+ }
+ /*icons end*/
+
+ /*title for the website*/
+ .title {
+  text-align: center;
+  margin-top: 15%;
+ }
+ .title2 {
+  text-align: center;
+  margin-top: -45%;
+  font-size: 48px;
+ }
+ .container{
+    text-align: center;
+    margin:51px;
+    width: 100%;
+  }
+/*end of the title*/
+
+  /*top nav bar*/
+  .closed-section{
+      display: flex;
+      margin: 0 auto;
+      width: 70%;
+      text-align: center;
+      align-items: center;
+  }
+  .topnav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #fff;
+  padding-right: 10px;
+  }
+  .topnav a:hover {
+    color: black;
+  }
+  .topnav a.active {
+    color: white;
+    width: 117px;
+    height: 21px;
+    font-family: Dosis;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-align: left;
+    color:white;
+  }
+  /* Responsive navigation menu (for mobile devices) */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+  /*end of top nav*/
+  
+  .small-blocks {
+     height: 4.000em;
+     width: 5.000em;
+     border: 0.313em solid black;
+     background-color: white;
+     margin: 0.625em;
+ 
+ }
+ /*starting of the body*/
+
+ .closed-section{
+     display:flex;
+     width: 70%;
+
+ }
+ .section{
+     height: 45.000em;
+     background-image: url("../images/expensive hotel.jpg");
+     background-size: cover;
+     background-position: center;
+
+     
+ }
+ 
+ /*the pink button class*/
+ .lookbutton{
+     background-color: #a88d7b;
+     text-decoration: none;
+     border-radius: 2.5em;
+     padding: 0.5em 1em;
+     text-decoration-color: #ffffff
+ }
+ .zar {
+     width: 21px;
+     height: 9px;
+     font-family: SourceSansPro;
+     font-size: 12px;
+     font-weight: 300;
+     font-style: normal;
+     font-stretch: normal;
+     line-height: normal;
+     letter-spacing: normal;
+     text-align: center;
+     color: #999999;
+   }
+ 
+   .en {
+     width: 13px;
+     height: 9px;
+     font-family: SourceSansPro;
+     font-size: 12px;
+     font-weight: 300;
+     font-style: normal;
+     font-stretch: normal;
+     line-height: normal;
+     letter-spacing: normal;
+     text-align: center;
+     color: #666666;
+   
+   }
+
+   /*the scroll feauter*/
+   .scroll-feature{
+      margin-bottom: 6em;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+   }
+
+   .illustrator{
+      position: relative;
+      width: 50px;
+      height: 50px;
+      transform: rotate(45deg);
+      }
+   .illustrator span{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      box-sizing: border-box;
+      border: none;
+      border-right: 3px solid #fff;
+      border-bottom: 3px solid #fff;
+      animation: animate 1s linear infinite;
+   }
+   .illustrator span:nth-child(1){
+      top: -30px;
+      left: -30px;
+      animation-delay: 0s;
+   }
+   .illustrator span:nth-child(2){
+      top: -15px;
+      left: -15px;
+      animation-delay: 0.2s;
+   }
+   .illustrator span:nth-child(3){
+      top: 0px;
+      left: 0px;
+      animation-delay: 0.4s;
+   }
+   .illustrator span:nth-child(4){
+      top: 15px;
+      left: 15px;
+      animation-delay: 0.6s;
+   }
+   .illustrator span:nth-child(5){
+      top: 30px;
+      left: 30px;
+      animation-delay: 0.8s;
+   }
+   @keyframes animate{
+   0%
+   {
+      border-color: #fff;
+      transform: translate(0,0)
+   }
+   20%
+   {
+      border-color: #fff;
+      transform: translate(15px,15px)
+   }
+   20.1% ,100%
+   {
+      border-color: #222;
+   }
+   }
+
+   /*end of scroll feature*/
+
+   /*the top head*/
+   .head{
+     width: 597px;
+     height: 38px;
+     font-family: Dosis;
+     font-size: 50px;
+     font-weight: normal;
+     font-style: normal;
+     font-stretch: normal;
+     line-height: 0.96;
+     letter-spacing: normal;
+     text-align: center;
+     color: #ffffff;
+     padding-bottom: 2em;
+     margin: 0 auto;
+    /* color: black;*/
+   }
+   
+   .paraf {
+  /* width: 924px;
+   height: 39px;*/
+   font-family: SourceSansPro;
+   font-size: 15px;
+   font-weight: normal;
+   font-style: normal;
+   font-stretch: normal;
+   line-height: 1.67;
+   letter-spacing: normal;
+   text-align: center;
+   color: #e6e6e6;
+ }
+   
+   .container-fluid {
+     display: flex;
+     margin: auto;
+     background-color: black;
+     color: #999999;
+ }
+ 
+ .logo{
+     padding-left: 20%;
+     width: 33%;
+
+ }
+
+
+
+  /*.shipping{
+     text-align: center;
+     margin: auto; 
+     width: 33%;
+ } */
+.nav{
+     
+     color: white;
+     margin: auto;
+ }
+ .navList{
+     display: flex;
+     list-style: none;}
+ 
+ .shoppingCart{
+     padding-left: 1.563em;
+     color:inherit;
+ }
+ .navList li a{
+     padding: 0 0.625em;
+     color: white;
+     
+ }*/
+ .title{
+     align-items: center;
+     text-align: center;
+     margin-top: 4.371em;
+ }
+  
+ 
+ .section2 {
+     width: 100%;
+     height: 44.00em;
+     background-color: var(--white);
+     display: flex;
+     align-items: center;
+     margin: 0 auto;
+     text-align: center;
+     
+   }
+ 
+ 
+   /* this is for the 3div in section 2 */
+ 
+ 
+ .image1 {
+     width: 23.125em;
+     height: 22.500em;
+     background-color: #666666;
+     background-image: url("../images/architecture-2804083__340.jpg");
+     background-position: center;
+     background-size: cover;
+     padding: 1.250em;
+     margin: 0 auto
+ ​}
+ 
+ .image2 {
+     width: 23.125em;
+     height: 22.500em;
+     background-color: #666666;
+     background-image: url("../images/bedroomnine.jpg");
+     background-position: center;
+     background-size: cover;
+     padding: 1.250em;
+     margin: 0 auto
+     
+ ​}
+ 
+ .image3 {
+     width: 23.125em;
+     height: 22.500em;
+     background-color: #666666;
+     background-image: url("../images/rendering-modern-dining.jpg");
+     background-position: center;
+     background-size: cover;
+     padding: 1.250em;
+     margin: 0 auto
+ ​}
+ /*the end to the 
+   /* this is the h1 in the section class */
+ .featured{
+     text-align: center;
+ }
+ 
+ div{
+     margin:0 auto;
+ }
+ 
+ .new-collection{
+     text-align: center;
+ }
+ 
+ .new-collection1{
+     text-align: center;
+     
+     align-items: center;
+     
+ }
+ /*all the image holders*/
+ .image-holder1 {
+     width: 35.625em;
+     height: 23.313em;
+     background-color: #666666;
+     background-image: url("../images/home-162.jpg");
+     background-position: center;
+     background-size: cover;
+     padding: 1.250em;
+     margin: 0 auto
+ }
+ 
+ .image-holder2 {
+     width: 35.625em;
+     height: 23.313em;
+     background-color: #666666; 
+     background-image: url("../images/hall-621741__340.jpg");
+     background-repeat: no-repeat;
+ }
+ 
+ .image-holder3{
+     align-items: center;
+     text-align: center;
+     margin-top: 4.371em;
+ 
+ }
+ 
+ .image-holder4 {
+     width: 70%;
+     height: 23.313em;
+     background-color: #666666;
+     background-image: url("../images/apartment-1851201__340.jpg");
+     margin: 0 auto;
+     align-items: center;
+     
+
+ }
+ 
+ .image-Holder5 {
+     width: 585px;
+     height: 405px;
+     background-color: #666666;}
+ 
+     .text-holder{
+         width: 529px;
+         height: 239px;
+         font-family: SourceSansPro;
+         font-size: 15px;
+         font-weight: normal;
+         font-style: normal;
+         font-stretch: normal;
+         line-height: 1.67;
+         letter-spacing: normal;
+         text-align: left;
+         color: #666666;}
+
+
+ .section3{
+         width: 100%;
+         height: 44.063em;
+         display: flex;
+         align-items: center;
+         text-align: center;
+      }        
+       
+ .image-holder6 {
+          width: 1900px;
+          height: 671px;
+          background-color: #f9f9f9;}
+   
+.image-holder7
+ {
+  width: 35.625em;
+  height: 23.313em;
+  background-color: #666666;
+  background-image: url("../images/baby-boy-3368017__340.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 1.250em;
+  margin: 0 auto
+}
+ 
+   
+ .section4{
+     
+ 
+          align-items: center;
+          text-align: -webkit-center;
+          height: 34.500em;
+          opacity: 0.9; 
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          background-color: #282828; 
+          background-image: url("../images/dining-room-3108037__340.jpg");
+      
+              
+ 
+ }
+ 
+ .section5{
+          width: 100%;
+          height: 34.500em;
+          opacity: 0.9;
+          background-color: #fffefe; }
+ /* the line bellow is the style for the about page */
+ 
+ .footer{
+         width: 100%;
+         height: 26.563em;
+         background-color: black;
+         color: white;}
+         
+         
+         .BG {
+   width: 1900px;
+   height: 425px;
+   background-color: #2d2827;
+ }
+         
+ .small-blocks {
+     height: 4.000em;
+     width: 5.000em;
+     border: 0.313em solid black;
+     background-color: white;
+     margin: 0.625em;
+ 
+ }
+ 
+ .BG {
+   width: 1900px;
+   height: 425px;
+   background-color: #2d2827;
+ }
+    
+    
+    /* font for a subhead contempry & modern*/
+    
+    .col {
+   width: 49px;
+   height: 16px;
+   font-family: SourceSansPro;
+   font-size: 25px;
+   font-weight: normal;
+   font-style: normal;
+   font-stretch: normal;
+   line-height: 1.92;
+   letter-spacing: 2.5px;
+   text-align: center;
+   color: #a88d7b;
+    }
+    
+     .com{
+   width: 530px;
+   height: 37px;
+   font-family: Dosis;
+   font-size: 48px;
+   font-weight: normal;
+   font-style: normal;
+   font-stretch: normal;
+   line-height: 0.5;
+   letter-spacing: normal;
+   text-align: center;
+   color: #ffffff;
+ }
+    .secof {
+   width: 656px;
+   height: 38px;
+   font-family: SourceSansPro;
+   font-size: 15px;
+   font-weight: normal;
+   font-style: normal;
+   font-stretch: normal;
+   line-height: 1.6;
+   letter-spacing: normal;
+   text-align: center;
+   color: #ffffff;
+   margin-top: 3em;
+  line-height: inherit;
+  letter-spacing: 1.3px;
 }

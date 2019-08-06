@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/lookbook.css">
+    <!-- this the bootarap link -->
+   <!-- --<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>-->
+
+</head>
+<body>
+
+<body>
+    <body>
+	
+        <!-- common main header -->
+        <header class="mainHeader">
+            <section class="headerContainer">
+                <div class="headerContent">
+                    <div class="headingLeft">
+                        <div class="selectDropDown">
+                            <select name="lang" id="lang" class="lang">
+                                <option value="English">EN</option>
+                                <option value="Arabic">AR</option>
+                                <option value="italy">IT</option>
+                            </select>
+                        </div>
+                        <div>
+                            <div class="mediaIcons">
+                                <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fa fa-google-plus google"></i></a>
+                                <a href="http://www.twitter.com"><i class="fa fa-twitter twitter"></i></a>
+                                <a href=""><i class="fa fa-pinterest pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="headerText">
+                        <h5>Free shipping for standard order over R100</h5>
+                    </div>
+                    <div class="selectDropDown">
+                        <select name="currency" id="currency" class="currency">
+                            <option value="rands">ZAR</option>
+                            <option value="euros">EUR</option>
+                            <option value="USA dollar">USD</option>
+                            <option value="australian dollar"></option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+            <!-- main Links -->
+            <section class="navContainer">
+                    <div class="MainNav">
+                        <span class="nabeB">N A T E B</span>
+                        <div class="topNav">
+                            <nav>
+                                <a href="index.html">Home</a>
+                                <a href="#about.html">About</a>
+                                <a href="shop.html">Shop</a>
+                                <a href="#blog.html">Blog</a>
+                                <a href="#contact.html">Contact</a>
+                                <a href="lookbook.html">Lookbook</a>
+                            </nav>
+                        </div> 
+						
+						
+                        <div class="cartContainer"> 
+						<div class="shoppingCart"> <i class="fa fa-shopping-cart"></i></div>
+						<div>
+                        <i class="fa fa-search"></i>
+                        </div>
+                        </div>
+                    </div>
+            </section>
+        </header>
+        <!-- main Content -->
+        <main class="MainContainer">
+            <section class="navImgHolder">
+                <div class="shopLinks">
+                    <h1>Lookbook</h1>
+                    <div>
+                        <a href="">Home</a>/
+                        <a href="">Lookbook</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Reusing Class Names -->
+            <section class="navContainer">
+                <div class="headerContent"> 
+                    <div style="width: 50%;" class="headerText">
+                        <p>Showing 1–12 of 20 results</p>
+                    </div>
+                    <div style="width: 50%;" class="selectDropDown">
+                        <select name="order" id="selectOrder">
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>N A T E  B.COM</h1>
+<hr>
+
+<h2>Gallery</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> View all</button>
+  <button class="btn" onclick="filterSelection('bedroom')"> bedroom</button>
+  <button class="btn" onclick="filterSelection('kitchen')"> kitchen</button>
+  <button class="btn" onclick="filterSelection('workspaces')"> workspaces</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column bedroom">
+    <div class="content">
+      <img src="images/bedbedroomchair.jpg" alt="bedroom" style="width:100%"onclick="myFunction(this);">
+	    <div class="overlay">Bed BlackChair & A Table</div>
+      <h4>Sleeping in peace</h4>
+      
+    </div>
+  </div>
+  <div class="column bedroom">
+    <div class="content">
+    <img src="images/wall-panelbed.jpg" alt="bedroom" style="width:100%"onclick="myFunction(this);">
+	<div class="overlay">Wall Panel Bed</div>
+      <h4>A Queens Nest</h4>
+      
+    </div>
+  </div>
+  <div class="column bedroom">
+    <div class="content">
+    <img src="images/bedroombedwall.jpg" alt="bed" style="width:100%"onclick="myFunction(this);">
+	 <div class="overlay">Bed Bedroom Chair </div>
+      <h4>A Place To Rest</h4>
+    
+    </div>
+  </div>
+  
+  
+  <div class="row">
+  <div class="column kitchen">
+    <div class="content">
+      <img src="images/kitchencounterroom.jpg" alt="kitch" style="width:100%"onclick="myFunction(this);">
+	   <div class="overlay">Kitchen Counter Room</div>
+      <h4>Neo-Comfortable Chairs Set Up</h4>
+     
+    </div>
+  </div>
+  <div class="column kitchen">
+    <div class="content">
+    <img src="images/kitchenlivingroom.jpg" alt="kitch" style="width:100%"onclick="myFunction(this);">
+	<div class="overlay">New Concept kitchen Living Room</div> 
+      <h4>chairs & A Sitting Table</h4>
+     
+    </div>
+  </div>
+  <div class="column kitchen">
+    <div class="content">
+    <img src="images/kitchenhome.jpg" alt="kitch" style="width:100%"onclick="myFunction(this);">
+	<div class="overlay">Warm-Feel Furniture</div>
+      <h4>Classical kitchen</h4>
+     
+    </div>
+  </div>
+
+
+<div class="row">
+  <div class="column workspaces">
+    <div class="content">
+      <img src="images/architecture.jpg" alt="work" style="width:100%"onclick="myFunction(this);">
+	   <div class="overlay">No boundary Furniture</div>
+	 
+      <h4>Brand New Set up</h4>
+     
+	  
+    </div>
+  </div>
+  <div class="column workspaces">
+    <div class="content">
+    <img src="images/office1.jpg" alt="work" style="width:100%"onclick="myFunction(this);">
+	 <div class="overlay">The Office Of A  Leader</div>
+      <h4>Managers office</h4>
+     
+    </div>
+  </div>
+  <div class="column workspaces">
+    <div class="content">
+    <img src="images/modern-office.jpg" alt="work" style="width:100%"onclick="myFunction(this);">
+	<div class="overlay">The Modern Office</div>
+      <h4>Todays Office</h4>
+      
+    </div>
+  </div>
+ 
+  
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+<!-- END GRID -->
+</div>
+</div>
+<!-- END MAIN -->
+</div>
+  
+
+<main id="footer1">
+<!-- FOOTER CONTENT -->
+    <footer class="mainFooter">
+        <section class="footerContent">
+                <div class="footerheadlings">
+                    <h3>N A T E B</h3>
+                    <div>
+                       <!-- <img src="images/map.png" alt="map">--> 
+                        <i>379 5th Ave Rondebosch, CT 7700</i>
+                    </div>
+                    <div>
+                        <img src="images/old_phone.png" alt="">
+                        <i>(+27) 78 372 2074</i>
+                    </div>
+                    <i>contact@nate_nonpareil.com</i>
+                </div>
+                
+                <div class="footerheadlings">
+                    <h3>Links</h3>
+                    <a href="">Products</a>
+                    <a href="">Featured</a>
+                    <a href="">private Policy</a>
+                    <a href="">Blog</a>
+                </div>
+
+                <div class="footerheadlings">
+                    <h3>Shop</h3>
+                    <a href="">Softwoods</a>
+                    <a href="">Hardwoods</a>
+                    <a href="">Lookbook</a>
+                    <a href="">Support</a>
+                </div>
+                <div class="instagram">
+                    <h3>Instagram</h3>
+                    <div class="instagramImg">
+                        <div class="instagramimgHolder">
+                            <img src="images/bedroom.jpg" alt="">
+                        </div>
+                        <div class="instagramimgHolder">
+                            <img src="images/builder-carpenter.jpg" alt="">
+                        </div>
+                        <div class="instagramimgHolder">
+                            <img src="images/campbell-tv-unit-16m.jpg" alt="">
+                        </div>
+                        <div class="instagramimgHolder">
+                            <img src="images/barthroom-hotel.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="instagramImg">
+                        <div class="instagramimgHolder">
+                            <img src="images/pexels-photo.jpeg" alt="">
+                        </div>
+                        <div class="instagramimgHolder">
+                            <img src="images/steel-wall.jpeg" alt="">
+                        </div>
+                        <div class="instagramimgHolder">
+                            <img src="images/Winnie+Light.jpg" alt="">
+                        </div>
+                        <div class="instagramimgHolder">
+                            <img src="images/Peaceful-Zen-Bathroom.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="bottomFooter">
+            <div class="copyRight">
+                <span>Copyright © 2019 Designed by Abdifatah. All rights reserved.</span>
+            </div>
+        </section>
+        
+    </footer>
+	</div>
+</body>
+</html>
+
+</main>
+​
+<script src="js/lookbook.js"> </script>
+
+
+
+
+
+
+
+      <!-- Bootstrap core JavaScript
+    ================================================== -->
+   
+</body>
+
+</html>
