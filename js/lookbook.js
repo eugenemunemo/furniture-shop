@@ -39,11 +39,11 @@ function myFunction(imgs) {
   imgText.innerHTML = imgs.alt;
   expandImg.parentElement.style.display = "block";
 }
-// tabled sticky nav bar variables
+//  sticky nav bar variables
 window.onscroll = function() {myFunction()};
 
 var topNav = document.getElementById("topNav");
-var sticky = topnav.offsetTop;
+var sticky = topNav.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
