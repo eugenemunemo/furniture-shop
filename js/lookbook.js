@@ -30,7 +30,7 @@ function n1RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-//tabled image gallery
+//tabled image gallery for expanding the image
 
 function myFunction(imgs) {
   var expandImg = document.getElementById("expandedImg");
@@ -38,4 +38,17 @@ function myFunction(imgs) {
   expandImg.src = imgs.src;
   imgText.innerHTML = imgs.alt;
   expandImg.parentElement.style.display = "block";
+}
+// tabled sticky nav bar variables
+window.onscroll = function() {myFunction()};
+
+var topNav = document.getElementById("topNav");
+var sticky = topnav.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    topNav.classList.add("sticky")
+  } else {
+    topNav.classList.remove("sticky");
+  }
 }
