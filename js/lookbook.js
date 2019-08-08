@@ -1,3 +1,18 @@
+//  sticky nav bar variables
+
+window.onscroll = function() {myFunction()};
+
+var topNav = document.getElementById("topNav");
+var sticky = topNav.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    topNav.classList.add("sticky")
+  } else {
+    topNav.classList.remove("sticky");
+  }
+}
+
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
@@ -30,25 +45,19 @@ function n1RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-//tabled image gallery for expanding the image
+//tabled image gallery
 
-function myFunction(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
-  expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
-  expandImg.parentElement.style.display = "block";
-}
-//  sticky nav bar variables
-window.onscroll = function() {myFunction()};
+  
+  //  sticky nav bar variables
+  window.onscroll = function() {myFunction()};
 
-var topNav = document.getElementById("topNav");
-var sticky = topNav.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    topNav.classList.add("sticky")
-  } else {
-    topNav.classList.remove("sticky");
+  var topNav = document.getElementById("topNav");
+  var sticky = topNav.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      topNav.classList.add("sticky")
+    } else {
+      topNav.classList.remove("sticky");
+    }
   }
-}

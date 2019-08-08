@@ -1,528 +1,529 @@
 *{
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #f1f1f1;
-    padding: 20px;
-    font-family: Arial;
-  }
-  
-  /* Center website */
-  .main {
-    max-width: 1000px;
-    margin: auto;
-  }
-  
-      
-  h5 {
-    color:#999999;
-  
-  }
-  
-  .row {
-    margin: 10px -16px;
-  }
-  
-  /* Add padding BETWEEN each column */
-  .row,
-  .row > .column {
-    padding: 8px;
-  }
-  
-  /* Create three equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 33.33%;
-    display: none; /* Hide all elements by default */
-  }
-  
-  /* Clear floats after rows */ 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Content */
-  .content {
-    background-color: white;
-    padding: 10px;
-  }
-  
-  /* The "show" class is added to the filtered elements */
-  .show {
-    display: block;
-  }
-  
-  /* Style the buttons */
-  .btn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: white;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: #ddd;
-  }
-  
-  .btn.active {
-    background-color: #666;
-    color: white;
-  }
-  
-  /*tabledimagegallery*/
-  
-  *{
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: Arial;
-  }
-  
-  /* The grid: Four equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 25%;
-    padding: 10px;
-  }
-  
-  /* Style the images inside the grid */
-  .column img {
-    opacity: 0.8; 
-    cursor: pointer; 
-  }
-  
-  .column img:hover {
-    opacity: 1;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* The expanding image container */
-  .container {
-    position: relative;
-    display: none;
-  }
-  
-  /* Expanding image text */
-  #imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
-  }
-  
-  /* Closable button inside the expanded image */
-  .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-     background-color: #a88d7b;
-      text-decoration: none;
-      border-radius: 2.5em;
-      padding: 0.5em 1em;
-      text-decoration-color: #ffffff
-  }
-  
-  
-  /*imageoverlay title*/
-  
-  *{box-sizing: border-box;}
-  
-  .column {
-    position: relative;
-    width: 50%;
-    max-width: 300px;
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .overlay {
-    position: absolute; 
-    bottom: 0; 
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1; 
-    width: 100%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+	
+h5 {
+  color:#999999;
+
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/*tabledimagegallery*/
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+   background-color: #a88d7b;
+    text-decoration: none;
+    border-radius: 2.5em;
+    padding: 0.5em 1em;
+    text-decoration-color: #ffffff
+}
+
+
+/*imageoverlay title*/
+
+*{box-sizing: border-box;}
+
+.column {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.column:hover .overlay {
+  opacity: 1;
+}
+body{
+    background-color: #f5f5f5;
+}
+div img{
+    width: 70%;
+}
+.mainNav, 
+.landingPage,
+.footerContent,
+.headerContent,
+.shopLayout{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
-  }
-  
-  .column:hover .overlay {
-    opacity: 1;
-  }
-  body{
-      background-color: #f5f5f5;
-  }
-  div img{
-      width: 70%;
-  }
-  .mainNav, 
-  .landingPage,
-  .footerContent,
-  .headerContent,
-  .shopLayout{
-      display: flex;
-      width: 80%;
-      margin: 0 auto;
-      text-align: center;
-      align-items: center;
-  }
-  .headerContainer{
-      background-color: #eee;
-  }
-  .headerContent{
-      height: 2.875em;
-  }
-  .navImgHolder{
-      height: fit-content;
-      background-image: url(../images/kitchenlivingroom.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-  }
-  .navContainer{
-      background-color: #fff;
-  }
-  .mainNav .nabeB{
-      font-family: Dosis;
-      font-size: 1.875em;
-      font-weight: 600;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: 1.5px;
-     /* text-align: left;*/
-      color: #000;
-  }
-  .mainNav{
-      text-align: -webkit-center;
+    align-items: center;
+}
+.headerContainer{
+    background-color: #eee;
+}
+.headerContent{
+    height: 2.875em;
+}
+.navImgHolder{
+    height: fit-content;
+    background-image: url(../images/kitchenlivingroom.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navContainer{
+    background-color: #fff;
+}
+.mainNav .nabeB{
+    font-family: Dosis;
+    font-size: 1.875em;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.5px;
+   /* text-align: left;*/
+    color: #000;
+}
+.mainNav{
+    text-align: -webkit-center;
+ 
+                    }
+
+.headingLeft,
+.cartContainer{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.cartContainer img{
+    width: 1.875em;
+}
+.cartContainer button{
+    border: none;
+    background-color: inherit;
+}
+.headingLeft,
+.headerText,
+.selectDropDown,
+.nabeB,
+.topNav,
+.cartContainer{
+    width: 30%;
+}
+.topNav{
+  text-align: right;
+  padding: 1rem;
+  display: flex;
+}
+.topNav a,
+.shopLinks a{
+  margin-right: 0.625em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Dosis;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #666;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+nav {
+  display: flex;
+}
+.shopLinks{
+    padding: 6em 0;
+}
+.shopLinks{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+.shopLinks h1{
+    font-family: SourceSansPro;
+    font-size: 3.125em;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.shopItems{
+    display: flex;
+    padding: 2em 0 ;
+    justify-content: space-evenly;
+}
+.shopItems .imgHolder,
+.shopItems .itemInfo{
+    width: 45%;
+}
+.itemInfo {
+    text-align: left;
+    display: block;
+}
+.addToCArt {
+    display: block;
+    margin-top: 4em;
+    font-family: SourceSansPro;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+.addToCArt{
+    background-color: #ac907f;
+    padding: 5px 10px;
+}
+.selectDropDown .lang,
+.selectDropDown .currency{
+    border: none;
+    background-color: inherit;
+    font-family: SourceSansPro;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #999999;
+}
+
+            /* Styles for Lookbook page */
+
+h2{
+    font-family: monospace;
+    font-size: 36px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #333333;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.lineUnderHeading{
+    width: 30px;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    border-bottom: 3px solid brown;
+}
+.featuredProducts{
+    margin: 0 auto;
+    display: block;
+    width: 70%;
+    text-align: center;
+    align-items: center;
+}
+.featuredProducts{
+    background-color: #f5f5f5;
+}
+.featuredItems,
+.instagramImg,
+.imgTitleAndPrice{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.imgHolder,
+.titleAndPrice{
+    width: 30%;
+    
+}
+.titleAndPrice h3{
+    height: 16px;
+    font-family: SourceSansPro;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.92;
+    letter-spacing: 2.5px;
+    text-align: center;
+    color: #a88d7b;
+    text-transform: uppercase;
+}
+
+        /* STYLES FOR FOOTER */
+.mainFooter{
+    background-color: #000;
+    display: block;
+    margin-top:4em;
+	color:#e5e5e5;
+}
+.instagramImg{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.bottomFooter{
+    background-color: #d7d7d7;
+}
+.bottomFooter .copyRight{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    padding: 1em 0;
+}
+.copyRight span{
+    color: #666666;
+}
+
+.footerContent{
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+.footerContent a{
+    display: block;
+    height: 11px;
+    font-family: SourceSansPro;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999;
+    text-decoration: none;
+    margin: 20px 0;
+	padding-left: 4em;
+}
+
+.footerContent h1{
+    color: #e5e5e5;
+}
+.footerContent .footerheadlings,
+.footerContent .instagram{
+    width: 25%;
+    padding-right: 1rem;
+}
+.instagramImg .instagramimgHolder{ 
+    width:20%;
+}
+.footerheadlings i{
+    color: #999999;
+    font-family: SourceSansPro;
+   /* font-size: 0.9375em;*/
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+}
+.footerheadlings img{
+    width: 0.9375em;
+    background-color: inherit;
+}
+
+ .small-blocks {
+       height: 4.000em;
+       width: 5.000em;
+       border: 0.313em solid black;
+       background-color: white;
+       margin: 0.625em;
    
-                      }
-  
-  .headingLeft,
-  .cartContainer{
-      display: flex;
-      justify-content: center; 
-      align-items: center;
-  }
-  .cartContainer img{
-      width: 1.875em;
-  }
-  .cartContainer button{
-      border: none;
-      background-color: inherit;
-  }
-  .headingLeft,
-  .headerText,
-  .selectDropDown,
-  .nabeB,
-  .topNav,
-  .cartContainer{
-      width: 30%;
-  }
-  .topNav{
-      text-align: right;
-      padding: 1rem;
-  }
-  .topNav a,
-  .shopLinks a{
-      margin-right: 0.625em;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-family: Dosis;
-      font-size: 16px;
-      font-weight: 600;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: 0.8px;
-      text-align: left;
-      color: #666;
-  }
-  .topNav {
-      display: flex;
-  }
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .sticky + .content {
-    padding-top: 60px;
-  }
+   }
 
-
-  .shopLinks{
-      padding: 6em 0;
+   .arrow {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
-  .shopLinks{
-      width: 80%;
-      margin: 0 auto;
-      text-align: center;
-      align-items: center;
+  .arrow a{
+    color: #333333;
+    text-decoration: none;
   }
-  .shopLinks h1{
-      font-family: SourceSansPro;
-      font-size: 3.125em;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.2;
-      letter-spacing: 5px;
-      text-align: center;
-      color: #fff;
-      text-transform: uppercase;
-  }
-  .shopItems{
-      display: flex;
-      padding: 2em 0 ;
-      justify-content: space-evenly;
-  }
-  .shopItems .imgHolder,
-  .shopItems .itemInfo{
-      width: 45%;
-  }
-  .itemInfo {
-      text-align: left;
-      display: block;
-  }
-  .addToCArt {
-      display: block;
-      margin-top: 4em;
-      font-family: SourceSansPro;
-      font-size: 15px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      letter-spacing: 1.5px;
-      text-align: center;
-      color: #fff;
-      text-decoration: none;
-  }
-  .addToCArt{
-      background-color: #ac907f;
-      padding: 5px 10px;
-  }
-  .selectDropDown .lang,
-  .selectDropDown .currency{
-      border: none;
-      background-color: inherit;
-      font-family: SourceSansPro;
-      font-size: 12px;
-      font-weight: 300;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      text-align: center;
-      color: #999999;
-  }
-  
-              /* Styles for Lookbook page */
-  
-  h2{
-      font-family: monospace;
-      font-size: 36px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.33;
-      letter-spacing: normal;
-      color: #333333;
-      text-transform: uppercase;
-      margin-bottom: 0;
-  }
-  .lineUnderHeading{
-      width: 30px;
-      margin: 0 auto;
-      margin-bottom: 4em;
-      border-bottom: 3px solid brown;
-  }
-  .featuredProducts{
-      margin: 0 auto;
-      display: block;
-      width: 70%;
-      text-align: center;
-      align-items: center;
-  }
-  .featuredProducts{
-      background-color: #f5f5f5;
-  }
-  .featuredItems,
-  .instagramImg,
-  .imgTitleAndPrice{
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      text-align: center;
-  }
-  
-  .imgHolder,
-  .titleAndPrice{
-      width: 30%;
-      
-  }
-  .titleAndPrice h3{
-      height: 16px;
-      font-family: SourceSansPro;
-      font-size: 25px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.92;
-      letter-spacing: 2.5px;
-      text-align: center;
-      color: #a88d7b;
-      text-transform: uppercase;
-  }
-  
-          /* STYLES FOR FOOTER */
-  .mainFooter{
-      background-color: #000;
-      display: block;
-      margin-top:4em;
-      color:#e5e5e5;
-  }
-  .instagramImg{
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      text-align: center;
-  }
-  .bottomFooter{
-      background-color: #d7d7d7;
-  }
-  .bottomFooter .copyRight{
-      width: 70%;
-      margin: 0 auto;
-      text-align: center;
-      align-items: center;
-      padding: 1em 0;
-  }
-  .copyRight span{
-      color: #666666;
-  }
-  
-  .footerContent{
-      display: flex;
-      margin: 0 auto;
-      width: 70%;
-      align-items: baseline;
-      justify-content: space-evenly;
-  }
-  .footerContent a{
-      display: block;
-      height: 11px;
-      font-family: SourceSansPro;
-      font-size: 15px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.6;
-      letter-spacing: normal;
-      text-align: left;
-      color: #999;
-      text-decoration: none;
-      margin: 20px 0;
-      padding-left: 4em;
-  }
-  
-  .footerContent h1{
-      color: #e5e5e5;
-  }
-  .footerContent .footerheadlings,
-  .footerContent .instagram{
-      width: 25%;
-      padding-right: 1rem;
-  }
-  .instagramImg .instagramimgHolder{ 
-      width:20%;
-  }
-  .footerheadlings i{
-      color: #999999;
-      font-family: SourceSansPro;
-     /* font-size: 0.9375em;*/
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.6;
-      letter-spacing: normal;
-      text-align: left;
-  }
-  .footerheadlings img{
-      width: 0.9375em;
-      background-color: inherit;
-  }
-  
-   .small-blocks {
-         height: 4.000em;
-         width: 5.000em;
-         border: 0.313em solid black;
-         background-color: white;
-         margin: 0.625em;
-     
-     }
-
-     .arrow {
-      text-align: center;
-      margin: 0 auto;
-      margin-bottom: 50px;
-    }
-    .arrow a{
-      color: #333333;
-      text-decoration: none;
-    }
-    /* the arrow at the footer */
-    .bounce1 {
-      -moz-animation: bounce 2s infinite;
-      -webkit-animation: bounce 2s infinite;
-      animation: bounce 2s infinite;
-      
-    }
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-      }
-      40% {
-        transform: translateY(-30px);
-      }
-      60% {
-        transform: translateY(-15px);
-      }
-    }
+  /* the arrow at the footer */
+  .bounce1 {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
     
-    
-     
-   /*  @media (min-width: 992px)
-    .col-md-3 {
-      width: 25%;
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
   }
   
-  @media (min-width: 992px)
-  .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
-      float: left;
-  }
+  
+   
+ /*  @media (min-width: 992px)
+  .col-md-3 {
+    width: 25%;
+}
+
+@media (min-width: 992px)
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+    float: left;
+}
