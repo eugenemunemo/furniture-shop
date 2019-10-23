@@ -51,7 +51,7 @@ function n1RemoveClass(element, name) {
   //  sticky nav bar variables
   window.onscroll = function() {myFunction()};
 
-  var topNav = document.getElementById("topNav");
+  var topNav = document.getElementById("mainHeader");
   var sticky = topNav.offsetTop;
   
   function myFunction() {

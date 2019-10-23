@@ -16,6 +16,8 @@
   animation: bounce 2s infinite;
   
 }
+
+
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -204,7 +206,7 @@
  /*the pink button class*/
  .lookbutton{
      background-color: #a88d7b;
-     text-decoration: none;
+     text-decoration: #ffffff;
      border-radius: 2.5em;
      padding: 0.5em 1em;
      text-decoration-color: #ffffff
@@ -438,6 +440,7 @@
    /* this is the h1 in the section class */
  .featured{
      text-align: center;
+   
  }
  
  div{
@@ -480,17 +483,16 @@
      margin-top: 4.371em;
  
  }
- 
- .image-holder4 {
+
+  .image-holder4 {
      width: 70%;
      height: 23.313em;
-     background-color: #666666;
+     background-color: 
+     000000 100      rgb 0 0 0;
      background-image: url("../images/apartment-1851201__340.jpg");
      margin: 0 auto;
      align-items: center;
-     
-
- }
+      }
  
  .image-Holder5 {
      width: 585px;
@@ -560,6 +562,15 @@
           opacity: 0.9;
           background-color: #fffefe; }
  /* the line bellow is the style for the about page */
+
+
+.scroll-to{
+  background-blend-mode: color;
+  background-color: #a88d7b;
+
+ text-decoration: #ffffff;
+  text-decoration-color: #ffffff
+ }
  
  .footer{
          width: 100%;
@@ -574,10 +585,22 @@
    background-color: #2d2827;
  }
          
- .small-blocks {
+ .small-blocks1,
+ .small-blocks2,
+ .small-blocks3,
+ .small-blocks4,
+ .small-blocks5,
+ .small-blocks6, 
+ .small-blocks7,
+ .small-blocks8 
+ {
      height: 4.000em;
      width: 5.000em;
      border: 0.313em solid black;
+     background-position: center;
+     background-size: cover;
+     padding: 1.250em;
+    
      background-color: white;
      margin: 0.625em;
  
@@ -604,6 +627,8 @@
    letter-spacing: 2.5px;
    text-align: center;
    color: #a88d7b;
+   padding-top: 2.3em;
+   
     }
     
      .com{
@@ -618,6 +643,7 @@
    letter-spacing: normal;
    text-align: center;
    color: #ffffff;
+   padding-top: 2.1em;
  }
     .secof {
    width: 656px;
@@ -634,6 +660,7 @@
    margin-top: 3em;
   line-height: inherit;
   letter-spacing: 1.3px;
+  padding-top: 2.2em;
 }
 
 .sticky {
@@ -644,4 +671,33 @@
 
 .sticky + .content {
   padding-top: 60px;
+}
+
+#more {display: none;
+background-color: #a88d7b}
+
+.myBtn{
+  background-color: #a88d7b
+}
+.small-blocks1{ background-image: url("../images/stadium-2921657__340.jpg");}
+.small-blocks2{ background-image: url("../images/table-71380__340.jpg");}
+.small-blocks3{ background-image: url("../images/aisle-1846114__340.jpg");}
+.small-blocks4{ background-image: url("../images/accessoerie-light-bulb.jpg");}
+.small-blocks5{ background-image: url("../images/apartmentbeddbed.jpg");}
+.small-blocks6 { background-image: url("../images/apartmentarchit.jpg");}
+.small-blocks7{ background-image: url("../images/bedchair.jpg");}
+.small-blocks8 { background-image: url("../images/bedroombedwall.jpg");}
+
+
+
+.page-footer{
+
+  height: 495px;
+}
+
+.font-weight{
+
+  height: 165px;
+  width: 325;
+  
 }
